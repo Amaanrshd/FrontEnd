@@ -1,0 +1,122 @@
+<!--<!DOCTYPE html>
+
+<html>
+    <head><title>Day3</title></head>
+    <body>
+        <h1>Day 3</h1>
+        <img src="resources/images/sample2.png" alt="Sample Image" width="400">
+
+        <video width="400" height="300" controls autoplay muted>
+            <source src="resources/videos/sample1.mp4">
+        </video>
+        <audio controls autolplay muted>
+            <source src="resources/audio/.mp3">
+        </audio>
+    </body>
+</html>-->
+
+<!--Inline [<p style="color: red;">] > ID [#] > Class [.]-->
+
+    <!--
+<!DOCTYPE html>
+<html>
+    <head><title>CSS</title></head>
+    <body>
+        <link rel="stylesheet" href="style.css">
+        <h1>Day 3: Learning CSS</h1>
+        <p id="id">Blah blah</p>
+        <p class="class">Blah</p>
+        <p>smthn</p>
+    </body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html>
+    <head> <link rel="stylesheet" href="style.css">
+        <title>Job Application
+        
+    </title>
+    </head>
+    <body>
+       
+        <h1>Job Application</h1>
+        <table>
+            <tr>
+                <th colspan="6">My Project</th>
+            </tr>
+            <tr>
+                <th>Sr.No</th>
+                <th>Category</th>
+                <th>Name</th>
+                <th>Descriptions</th>
+                <th>Skills</th>
+                <th>Links</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="2">Frontend</td>
+                <td>Portfolio Website</td>
+                <td>A personal Portfolio to showcase my work</td>
+                <td>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </td>
+                <td><a href="https://en.wikipedia.org/wiki/HTML">View Project</a></td>
+            </tr>
+            <tr>
+
+            </tr>
+        </table>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="firstname">First Name: </label>
+                <input name="firstname" id="firstname"><br/>
+                <br/><label for="email">Email: </label>
+                <input type="email" name="email" id="email"><br/>
+                <br/><label for="age">Age: </label>
+                <input name="age" id="age"><br/><br/>
+            </fieldset>
+
+            <br/><fieldset>
+                <legend>Job Details</legend>
+                <label for="department">Department: </label>
+                <select id="department" name="department">
+                    <optgroup label="Engineering">
+                        <option value="1">FrontEnd Developer</option>
+                        <option value="2">BackEnd Developer</option>
+                    </optgroup>
+                    <optgroup label="Designer">
+                        <option value="3">UI Designer</option>
+                        <option value="4">UX Designer</option>
+                    </optgroup>
+                </select><br/>
+
+                <br/><label for="startdate">Preferred Starting Date: </label>
+                <input type="date" name="startdate" id="startdate"><br/>
+
+                <br/><label for="resume">Upload Resume: </label>
+                <input type="file" name="resume" id="resume"><br/><br/>
+
+            </fieldset>
+
+            <br/><fieldset>
+                <legend>Additional Information</legend>
+                <label>Why should we hire you?</label><br/>
+                <textarea rows="5" cols="50" name="why"></textarea><br/>
+                <br/><input type="checkbox" name="subscribe" id="subscribe">
+                <label for="subscribe">Get Emails from us</label><br/>
+                <br/><label for="time">Preferred Interview Time</label>
+                <input type="time" name="time" id="time"><br/><br/>
+
+            </fieldset>
+
+            <br/><button type="submit">Submit Application</button>
+            <button type="reset">Reset form</button>
+        </form>
+    </body>
+</html>
