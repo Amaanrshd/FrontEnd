@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+</head>
+<body>
+
+<h2>Job Application</h2>
+
+<form>
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18"><br><br>
+    </fieldset>
+    <br>
+
+    <!-- Job Details -->
+    <fieldset>
+        <legend>Job Details</legend>
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <optgroup label="Engineering">
+                <option value="frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+            </optgroup>
+            <optgroup label="Design">
+                <option value="ui">UI Designer</option>
+                <option value="ux">UX Designer</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="start-date">Preferred Start Date:</label>
+        <input type="date" id="start-date" name="start-date"><br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume"><br><br>
+    </fieldset>
+    <br>
+
+    <!-- Additional Info -->
+    <fieldset>
+        <legend>Additional Information</legend>
+        <label for="comments">Why should we hire you?</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+        <label>
+            <input type="checkbox" name="subscribe"> Subscribe to our newsletter
+        </label><br><br>
+
+        <label>Preferred Interview Time:</label>
+        <input type="time" name="interview-time"><br><br>
+    </fieldset>
+    <br>
+
+    <!-- Buttons -->
+    <button type="submit">Submit Application</button>
+    <button type="reset">Reset Form</button>
+</form>
+
+</body>
+</html>
