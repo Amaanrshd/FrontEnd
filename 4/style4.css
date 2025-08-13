@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid black;
+    height: 90vh;
+    justify-content: space-between;
+
+
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1{
+    background-color: hsl(0, 100%, 70%);
+
+}
+
+#box2{
+    background-color: hsl(52, 100%, 70%);
+
+}
+
+#box3{
+    background-color: hsl(111, 100%, 70%);
+}
+
+#box4{
+    background-color: hsl(201, 100%, 70%);
+}
