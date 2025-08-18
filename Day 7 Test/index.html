@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Personal portfolio website of a freelance web developer showcasing projects, skills, and contact details.">
+        <meta name="keywords" content="portfolio, web developer, freelance, HTML, CSS, JavaScript, projects, contact">
+        <title>My Portfolio | Freelance Web Developer</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header12">
+                    <h1>Amaan Abdul Rasheed</h1>
+                    <h2>Web Developer & Designer</h2>
+                </div>
+                <div class="nav">
+                    <nav>
+                        <a href="#about">About Me</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact me</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <div class="about">
+                    <section id="about">
+                        <h3>About me</h3>
+                        <p>Hello and welcome to my portfolio. My name is Amaan Abdul Rasheed, and I am doing my first year of my University at the University of Saarland, Saarbrücken, Germany, pursuing my studies in Computer Engineering. I am passionate about web development, design, and creating interactive, user-friendly digital experiences.<br/><br/>
+I have been building projects using HTML, CSS, and JavaScript, and I enjoy experimenting with new technologies and frameworks to enhance my skills. This portfolio showcases some of my recent projects, technical skills, and the services I can offer as a freelance web developer.<br/><br/>
+Feel free to check out my work on  <a href="https://github.com/Amaanrshd/FrontEnd">GitHub</a> to see code samples and projects I’ve been working on. </p>
+                    </section>
+                </div>
+                <div class="skills">
+                    <section id="skills">
+                        <h3>Skills</h3>
+                        <ul>
+                           <li>HTML</li> 
+                           <li>CSS</li>
+                           <li>JavaScript</li>
+                           <li>Python</li>
+                           <li>MySQL Database</li>
+                        </ul>
+                        <div class="frontend">
+                            <h4>Frontend</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                        </div>
+                        <div class="backend">
+                            <h4>Backend</h4>
+                            <ul>
+                                <li>Python</li>
+                                <li>MySQL Database</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="projects">
+                    <section id="projects">
+                        <table border="1">
+                            <tr>
+                                <th colspan="5">My Projects</th>
+                            </tr>
+                            <tr>
+                                <th>Sr.No</th>
+                                <th>Project Name</th>
+                                <th>Technology Used</th>
+                                <th>Completion Date</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>HTML Tables</td>
+                                <td>HTML, CSS</td>
+                                <td>04/08/2025</td>
+                                <td>Done</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>HTML Forms</td>
+                                <td>HTML, CSS</td>
+                                <td>05/08/2025</td>
+                                <td>Done</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Job Application Form</td>
+                                <td>HTML, CSS</td>
+                                <td>06/08/2025</td>
+                                <td>Done</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>JavaScript</td>
+                                <td>JavaScript</td>
+                                <td>13/08/2025</td>
+                                <td>Done</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">You can find all my projects <a href="https://github.com/Amaanrshd/FrontEnd">here.</a></td>
+                            </tr>
+                        </table>
+
+                    </section>
+                </div>
+                <div class="contact">
+                    <section id="contact">
+                        <fieldset>
+
+                            <legend> Contact Me! </legend>
+
+                            <label for="name">Please enter your name: </label>
+                            <input name="name" id="name"><br/>
+
+                            <label for="email">Please enter your email: </label>
+                            <input type="email" id="email"><br/>
+
+                            <label for="projecttype">Project Type</label>
+                            <select id="projecttype" name="projecttype">
+                                <option value="" disabled selected hidden>~ Select a project type ~</option>
+                                <option value="2">Web Design</option>
+                                <option value="3">Web Development</option>
+                                <option value="4">SEO</option>
+                            </select>
+
+                            <p>Budget Range</p>
+                            <input type="radio" id="budget1" name="budget">
+                            <label for="budget1">Rs 20,000 - 30,000</label><br>
+                            <input type="radio" id="budget2" name="budget">
+                            <label for="budget2">Rs 30,000 - 45,000</label><br>
+                            <input type="radio" id="budget3" name="budget">
+                            <label for="budget3">Rs 45,000+</label><br><br>
+
+                            <p>Services Needed</p>
+                            <label><input type="checkbox" name="services"> Web Design</label><br>
+                            <label><input type="checkbox" name="services"> Web Development</label><br>
+                            <label><input type="checkbox" name="services"> SEO</label><br>
+                            <label><input type="checkbox" name="services"> Website Maintenance</label><br/><br/>
+
+                            <label for="projectdesc">Project Description</label><br/>
+                            <textarea id="projectdesc" name="projectdesc" rows="5" cols="40" placeholder="Please explain your project here..."></textarea><br/><br/>
+
+                            <label for="startdate">Preferred Start Date</label>
+                            <input type="date" id="startdate" name="startdate"><br/>
+                            <div class="form-buttons">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+
+                        </fieldset>
+
+                    </section>
+                </div>
+            </div>
+        </main>
+    </body>
