@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap');
+
+
+    
+/* General body styling */
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(135deg, #1c1c1c, #2b1e12); /* dark, rich background */
+    color: #f5f5f0; /* off-white text for readability */
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    min-width: 300px;
+    line-height: 1.6;
+    border-radius: 20px;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #d4af37, #c49a6c) 1; /* golden border */
+    transition: background 0.5s ease, transform 0.3s ease;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #2b1e12, #3a2b1c);
+    border-radius: 20px;
+    margin: 1rem auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+    
+
+
+.category h3 { 
+    text-align: center; 
+    margin-bottom: 1rem; 
+}
+
+
+header h1, .category h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5rem;
+}
+
+header:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(212,175,55,0.6); /* golden glow */
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.8rem;
+    color: #d4af37; /* golden accent */
+}
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+nav a {
+    color: #f5f5f0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #d4af37;
+    color: #1c1c1c;
+    box-shadow: 0 6px 18px rgba(212,175,55,0.5);
+    transform: translateY(-2px);
+}
+
+#home img {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    filter: brightness(0.8) contrast(1.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#home img:hover {
+    transform: scale(1.05);
+    filter: brightness(1) contrast(1.3);
+}
+
+
+/* Section styling */
+
+
+.section {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Images in sections */
+.section img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 14px 35px rgba(212,175,55,0.5); /* golden glow on hover */
+}
+
+/* Category styling */
+.category {
+    margin-bottom: 9rem;
+}
+
+.category h3 {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    padding: 1rem 2rem;
+    border: 2px solid #d4af37;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #2b1e12, #3a2b1c);
+    color: #d4af37;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 6px rgba(212,175,55,0.3);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category h3:hover {
+    background: linear-gradient(145deg, #3a2b1c, #4b3622);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(212,175,55,0.4);
+}
+
+/* Cards container */
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Card styling */
+
+
+.card {
+    background: linear-gradient(145deg, #2e2e2e, #3a2b1c);
+    color: #f5f5f0;
+    border-radius: 25px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.02);
+    background: linear-gradient(145deg, #3a2b1c, #4b3622);
+    box-shadow: 0 16px 35px rgba(212,175,55,0.5); /* golden hover glow */
+}
+
+/* Card images */
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 0.7rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 30px rgba(212,175,55,0.5);
+}
+
+/* Cold Drinks cards */
+.category:nth-of-type(12) .card img {
+    height: 210px;
+}
+
+/* Card body */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #3a2b1c;
+    color: #f5f5f0;
+    border: 2px solid #d4af37;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #d4af37;
+    color: #1c1c1c;
+    box-shadow: 0 8px 25px rgba(212,175,55,0.5);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.reset-confirm {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.reset-confirm > div {
+    background-color: #0b0b7c; /* dark background */
+    color: black;               /* text color */
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 300px;
+}
+.reset-confirm p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.reset-confirm button {
+    margin: 0 0.5rem;
+}
+
+#reset-total-btn {
+    background: rgba(212,175,55,0.5); /* firebrick red */
+    border: 2px solid black; /* maroon */
+}
+
+
+
+/* About & Contact sections */
+#about, #contact {
+    background: linear-gradient(135deg, #2b1e12, #3a2b1c);
+    padding: 2.5rem;
+    margin: 1rem auto;
+    border-radius: 25px;
+    max-width: 1000px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about:hover, #contact:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 18px 35px rgba(212,175,55,0.4);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(145deg, #2b1e12, #3a2b1c);
+    color: #f5f5f0;
+    padding: 1.8rem;
+    border-radius: 25px;
+    margin: 1rem auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
